@@ -1,7 +1,7 @@
 from qiskit import QuantumCircuit, Aer, execute
 from rich import print
 
-print("🔬 Gerhardt Quantum Circuit Execution")
+print("🧠 GERHARDT TOTALITY QPU RUNTIME")
 
 qc = QuantumCircuit(2, 2)
 qc.h(0)
@@ -12,4 +12,4 @@ backend = Aer.get_backend("qasm_simulator")
 result = execute(qc, backend, shots=512).result()
 counts = result.get_counts()
 
-print(f"[bold green]Result:[/bold green] {counts}")
+print(f"[bold green]Measurement Result:[/bold green] {counts}")
